@@ -11,7 +11,7 @@ import java.util.List;
 @Repository
 public interface UserMapper {
 
-    @Select("select * from user")
+    @Select("select * from \"user\"")
     List<User> findAll();
 
     @Insert("insert into user(username,password)values(#{username},#{password}")
